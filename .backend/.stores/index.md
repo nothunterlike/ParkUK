@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ParkUK — Find it, Park it</title>
+  <meta name="description" content="Quickly view and find parking spaces near you.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="#top" class="nav-logo">
+        <img src="img/2ParkUKLogo.png" alt="ParkUK">
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="hero-overlay">
+      <div class="container hero-content">
+        <h1>Find it, Park it</h1>
+        <p>Quickly view and find parking spaces near you. Save time, avoid stress, and park smarter with real-time availability.</p>
+        <a href="#features" class="btn">Find Parking</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section section-dark" id="features">
+    <div class="container">
+      <h2 class="section-heading">Features</h2>
+      <div class="grid grid-4">
+        <article class="feature-card">
+          <div class="icon-circle" aria-hidden="true">📱</div>
+          <h3>Mobile Friendly</h3>
+          <p>Access parking services on any device, anytime.</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon-circle" aria-hidden="true">🔍</div>
+          <h3>Smart Search</h3>
+          <p>Quickly find the best parking spots near your destination.</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon-circle" aria-hidden="true">⚡</div>
+          <h3>Real-Time</h3>
+          <p>All listed parking spots are reliable and updated in real time.</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon-circle" aria-hidden="true">👍</div>
+          <h3>Trusted by Users</h3>
+          <p>Thousands of drivers rely on our platform daily.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <img src="img/about.png" alt="ParkUK app preview" class="about-image">
+      <div class="about-text">
+        <h2 class="section-heading section-heading-left">About Us</h2>
+        <p>ParkUK helps drivers locate available parking spaces instantly. Whether you're heading into the city, commuting, or planning a trip, our platform shows real-time parking availability, pricing, and locations.</p>
+        <h3>Why Choose Us?</h3>
+        <div class="about-lists">
+          <ul>
+            <li>Real-time parking availability</li>
+            <li>Integrated Smart Search</li>
+            <li>Reliable information</li>
+            <li>Covers major areas</li>
+          </ul>
+          <ul>
+            <li>Responsive data</li>
+            <li>User-friendly interface</li>
+            <li>24/7 support</li>
+            <li>Saves time and fuel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-blue" id="services">
+    <div class="container">
+      <h2 class="section-heading">Our Services</h2>
+      <p class="section-intro">We'll help you view, find, and travel to parking spaces with Real-Time Availability, Integrated Smart Search, and more.</p>
+      <div class="grid grid-3">
+        <article class="service-card">
+          <h3>Find Parking</h3>
+          <p>Locate nearby parking spaces instantly with live availability updates.</p>
+        </article>
+        <article class="service-card">
+          <h3>Smart Searching</h3>
+          <p>Easily find new, old, or favourite spots with our integrated smart search.</p>
+        </article>
+        <article class="service-card">
+          <h3>User Preference</h3>
+          <p>Made especially to fit the needs and appeal of the user to support the experience.</p>
+        </article>
+        <article class="service-card">
+          <h3>24/7 Access</h3>
+          <p>Access parking services anytime, anywhere with our platform.</p>
+        </article>
+        <article class="service-card">
+          <h3>Multiple Locations</h3>
+          <p>Find parking available from the local areas to dense districts.</p>
+        </article>
+        <article class="service-card">
+          <h3>Safe &amp; Secure</h3>
+          <p>All listed parking spots are verified for safety and reliability.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-gallery" id="gallery">
+    <div class="container">
+      <h2 class="section-heading">Parking Gallery</h2>
+      <p class="section-intro">Explore available parking spaces, locations, and facilities you can book instantly through our platform.</p>
+      <div class="gallery-grid">
+        <a href="img/portfolio/01-large.jpg" class="gallery-item" data-title="City Centre Parking">
+          <img src="img/portfolio/01-small.jpg" alt="City Centre Parking">
+          <span class="gallery-caption">City Centre Parking</span>
+        </a>
+        <a href="img/portfolio/02-large.jpg" class="gallery-item" data-title="Underground Parking">
+          <img src="img/portfolio/02-small.jpg" alt="Underground Parking">
+          <span class="gallery-caption">Underground Parking</span>
+        </a>
+        <a href="img/portfolio/03-large.jpg" class="gallery-item" data-title="Secure Parking Area">
+          <img src="img/portfolio/03-small.jpg" alt="Secure Parking Area">
+          <span class="gallery-caption">Secure Parking Area</span>
+        </a>
+        <a href="img/portfolio/04-large.jpg" class="gallery-item" data-title="Street Parking Spots">
+          <img src="img/portfolio/04-small.jpg" alt="Street Parking Spots">
+          <span class="gallery-caption">Street Parking Spots</span>
+        </a>
+        <a href="img/portfolio/05-large.jpg" class="gallery-item" data-title="Airport Parking">
+          <img src="img/portfolio/05-small.jpg" alt="Airport Parking">
+          <span class="gallery-caption">Airport Parking</span>
+        </a>
+        <a href="img/portfolio/06-large.jpg" class="gallery-item" data-title="EV Charging Parking">
+          <img src="img/portfolio/06-small.jpg" alt="EV Charging Parking">
+          <span class="gallery-caption">EV Charging Parking</span>
+        </a>
+        <a href="img/portfolio/07-large.jpg" class="gallery-item" data-title="Covered Parking">
+          <img src="img/portfolio/07-small.jpg" alt="Covered Parking">
+          <span class="gallery-caption">Covered Parking</span>
+        </a>
+        <a href="img/portfolio/08-large.jpg" class="gallery-item" data-title="Residential Parking">
+          <img src="img/portfolio/08-small.jpg" alt="Residential Parking">
+          <span class="gallery-caption">Residential Parking</span>
+        </a>
+        <a href="img/portfolio/09-large.jpg" class="gallery-item" data-title="24/7 Access Parking">
+          <img src="img/portfolio/09-small.jpg" alt="24/7 Access Parking">
+          <span class="gallery-caption">24/7 Access Parking</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light" id="testimonials">
+    <div class="container">
+      <h2 class="section-heading section-heading-dark">What our clients say</h2>
+      <div class="grid grid-3">
+        <blockquote class="testimonial">
+          <img src="img/testimonials/01.jpg" alt="" class="testimonial-avatar">
+          <p>"This app saved me so much time in the city. Found parking in seconds!"</p>
+          <cite>James R.</cite>
+        </blockquote>
+        <blockquote class="testimonial">
+          <img src="img/testimonials/02.jpg" alt="" class="testimonial-avatar">
+          <p>"Super easy to use and booking ahead is a game changer."</p>
+          <cite>Sarah L.</cite>
+        </blockquote>
+        <blockquote class="testimonial">
+          <img src="img/testimonials/03.jpg" alt="" class="testimonial-avatar">
+          <p>"No more driving around looking for spaces. Highly recommend."</p>
+          <cite>Michael T.</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="team">
+    <div class="container">
+      <h2 class="section-heading section-heading-dark">Meet the Team</h2>
+      <p class="section-intro section-intro-dark">The people behind Find it, Park it — building smarter, faster, and easier parking solutions for everyone.</p>
+      <div class="grid grid-4">
+        <article class="team-card">
+          <img src="img/team/01.jpg" alt="Alex Carter">
+          <h4>Alex Carter</h4>
+          <p>Founder</p>
+        </article>
+        <article class="team-card">
+          <img src="img/team/02.jpg" alt="Emma Lewis">
+          <h4>Emma Lewis</h4>
+          <p>Lead Developer</p>
+        </article>
+        <article class="team-card">
+          <img src="img/team/03.jpg" alt="Ryan Patel">
+          <h4>Ryan Patel</h4>
+          <p>UI/UX Designer</p>
+        </article>
+        <article class="team-card">
+          <img src="img/team/04.jpg" alt="Sophia Khan">
+          <h4>Sophia Khan</h4>
+          <p>Project Manager</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-form-wrap">
+        <h2 class="section-heading section-heading-left-light">Get In Touch</h2>
+        <p class="contact-lead">Fill out the form below and we will get back to you as soon as possible.</p>
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <input type="text" id="name" name="name" placeholder="Name" required>
+              <span class="form-error" data-for="name"></span>
+            </div>
+            <div class="form-field">
+              <input type="email" id="email" name="email" placeholder="Email" required>
+              <span class="form-error" data-for="email"></span>
+            </div>
+          </div>
+          <div class="form-field">
+            <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+            <span class="form-error" data-for="message"></span>
+          </div>
+          <p class="form-success" id="form-success" hidden>Thank you! Your message has been sent.</p>
+          <button type="submit" class="btn btn-outline">Send Message</button>
+        </form>
+      </div>
+      <aside class="contact-info">
+        <h3>Contact Info</h3>
+        <p><strong>Address</strong><br>London, UK</p>
+        <p><strong>Phone</strong><br>+44 123 456 7890</p>
+        <p><strong>Email</strong><br>support@finditparkit.com</p>
+        <div class="social-links">
+          <a href="https://facebook.com/finditparkit" aria-label="Facebook">Facebook</a>
+          <a href="https://twitter.com/finditparkit" aria-label="Twitter">Twitter</a>
+          <a href="https://youtube.com/finditparkit" aria-label="YouTube">YouTube</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 ParkUK. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <img src="" alt="" id="lightbox-img">
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
