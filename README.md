@@ -1,25 +1,29 @@
-# React JS Landing Page Template
+# ParkUK
 
+Static landing page for **Find it, Park it** — plain HTML, CSS, and JavaScript. No frameworks or build step.
 
-### <a href="https://react-landing-page-template.herokuapp.com">LIVE DEMO</a> 
+## Project structure
 
-## Description
-This is a ReactJS based landing page template, fit for a startup company/service with a one page view. The design is inspired by a template from <a href="https://www.free-css.com/assets/files/free-css-templates/preview/page234/interact/">Free-CSS.com </a>
-All componenets data can be easily modified to git use by changing the data.JSON file that contains all data.
+```
+index.html      Page markup
+css/style.css   All styles
+js/main.js      Navigation, lightbox, form handling
+img/            Images and logos
+```
 
-## Make it Yours!
-### 1. Preps
-You will need to have <a href="https://nodejs.org/">Node JS</a> installed on your pc. 
+## Run locally
 
-### 2. Clone Files
-After cloning the files, you will have to run ```yarn``` followed by ```yarn start``` in the CLI
-### 3. Add your own data 
-Change the data in the ```data.JSON``` file as well as add any images to ```public/img/```
-You can also change styles by modifying the ```public/css``` files.
+Open `index.html` in your browser, or:
 
+```bash
+python3 -m http.server 8080
+```
 
-## Credits
-##### Free CSS 
-<a href="https://www.free-css.com/assets/files/free-css-templates/preview/page234/interact/">Free-CSS.com </a>
+Then visit http://localhost:8080
 
-##### Issaaf kattan
+## Customize
+
+- **Content:** edit `index.html`
+- **Styles:** edit `css/style.css`
+- **Behavior:** edit `js/main.js`
+- **Images:** add or replace files in `img/`
