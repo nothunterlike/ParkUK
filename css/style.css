@@ -1,4 +1,4 @@
-/* ParkUK — inspired by Withnovu modern SaaS style */
+/* ParkUK $ style.css */
 
 :root {
   --bg: #020814;
@@ -11,6 +11,31 @@
   --primary-strong: #74a5ff;
   --radius: 28px;
   --max-width: 1180px;
+}
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    backdrop-filter: blur(3px);
+    background-color: rgb(21, 34, 43);
+    box-shadow: rgba(255, 255, 255, 0.1) 1px 1px 1px 0px inset, rgba(255, 255, 255, 0.2) -1px -1px 1px 0px inset;
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+    backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: rgba(255, 255, 255, 0.1) 2px 1px 1px 1px inset, rgba(255, 255, 255, 0.2) -1px -1px 1px 0px inset;
+    border-radius: 4vw;
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.336);
 }
 
 *, *::before, *::after {
@@ -68,13 +93,12 @@ textarea {
 
 .nav-menu {
   margin-inline: auto;
-  margin-top: 0.71rem;
-  height: 51px;
+  margin-top: 0.65rem;
+  height: 50px;
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
   padding: 0.4rem 0.5rem;
-  border-radius: 50vw;
     backdrop-filter: blur(3px);
     background-color: rgba(255, 255, 255, 0.15);
     box-shadow: rgba(255, 255, 255, 0.4) 1px 1px 1px 0px inset, rgba(255, 255, 255, 0.2) -1px -1px 1px 0px inset;
@@ -103,6 +127,7 @@ textarea {
 }
 
 .btn-cta {
+  font-family:Arial, Helvetica, sans-serif;
   display: inline-flex;
   align-items: center;
   margin-top: 0.45rem;
@@ -113,15 +138,20 @@ textarea {
   padding: 0.45rem 1.5rem;
   border-radius: 50px;
   height: 43px;
+  font-weight: 500;
+  font-size: 14px;
   background: #01030b;
-  color: #fff;
+  color: #dfdfdf;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
   transition: background 0.3s ease, color 0.3s ease;
 }
 
 .btn-cta:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  backdrop-filter: blur(1px);
+    box-shadow: rgba(255, 255, 255, 0.1) 1px 1px 1px 0px inset, rgba(255, 255, 255, 0.2) -1px -1px 1px 0px inset;
+    border-radius: 50vw;
+  color: #8398d1;
+  background: #0e0f14;
 }
 
 .btn-cta:active,
@@ -146,9 +176,12 @@ textarea {
 }
 
 .nav-links a {
+  font-family: sans-serif;
   color: var(--text);
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 14px;
+  color: #dfdfdf;
   display: inline-flex;
   align-items: center;
   margin-top: 0.45rem;
@@ -161,6 +194,7 @@ textarea {
 }
 
 .nav-links a:hover {
+  color: #dfdfdf;
   color: var(--text);
   display: inline-flex;
   align-items: center;
@@ -171,6 +205,9 @@ textarea {
   padding: 0.45rem 1.5rem;
   height: 43px;
   background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+    box-shadow: rgba(255, 255, 255, 0.1) 1px 1px 1px 0px inset, rgba(255, 255, 255, 0.2) -1px -1px 1px 0px inset;
+    border-radius: 50vw;
 }
 
 .nav-toggle {
@@ -565,7 +602,11 @@ textarea {
 }
 
 .footer-inner {
+  font-family:sans-serif;
+  font-weight: 700;
+  font-size: 11.5px;
   display: flex;
+  color: #cecece;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
