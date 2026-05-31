@@ -66,14 +66,7 @@ img {
   max-width: 100%;
 }
 
-.hero {
-  background-image: url("img/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 150vh;
-  margin-top: -100px;
-}
+
 
 .container {
   width: min(100% - 2rem, var(--max-width));
@@ -128,31 +121,28 @@ img {
   background: rgba(255, 255, 255, 0.22);
 }
 
-.btn-cta {
-  font: sans-serif;
+.btn {
+  font-family: helvetica, sans-serif;
   display: inline-flex;
   align-items: center;
-  margin-top: 0.5rem;
-  margin-right: -0.2rem;
   justify-content: center;
-  padding: 0.45rem 1.5rem;
-  border-radius: 50px;
-  height: 42.75px;
+  border-radius: 50vw;
   width: 165px;
-  font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
+  font-style: bold;
+  margin-top: 0rem;
+  margin-right: -0.2rem;
+  height: 42.75px;
+  padding: 0.45rem 1.5rem;
   background: #01030b;
   color: #e7e7e7;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
   transition: background 0.3s ease, color 0.3s ease;
 }
 
 .btn-cta:hover {
   backdrop-filter: blur(1px);
-    box-shadow: rgba(255, 255, 255, 0.1) 1px 1px 1px 0px inset, rgba(255, 255, 255, 0.2) -1px -1px 1px 0px inset;
-    border-radius: 50vw;
-  color: #8398d1;
-  background: #0e0f14;
+  border-radius: 50vw;
+  color: #c3c2ff;
 }
 
 .btn-cta:active,
@@ -178,7 +168,6 @@ img {
 
 .nav-links a {
   font-family: sans-serif;
-  background: rgb(0, 0, 0);
   color: var(--text);
   font-weight: 400;
   font-size: 14.5px;
@@ -228,25 +217,40 @@ img {
 }
 
 .hero {
-  background-image: url("../img/intro-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative;
+  width: 100%;
   min-height: 100vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -50px;
+
+  background-image: url("../img/hero/driverphoto.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
 }
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(2, 8, 20, 0.45);
+
+  background: linear-gradient(
+    180deg,
+    rgba(2, 8, 20, 0.45) 0%,
+    rgba(2, 8, 20, 0.65) 100%
+  );
+
   z-index: 0;
+}
+
+.hero-grid,
+.hero-copy {
+  position: relative;
+  z-index: 2;
 }
 
 .hero .container {
@@ -275,42 +279,38 @@ img {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
-  font-size: clamp(3.5rem, 8vw, 5.5rem);
+  font-size: clamp(4rem, 8vw, 7rem);
   line-height: 1.1;
-  font-weight: 600;
   letter-spacing: -0.02em;
   white-space: normal;
   color: #ffffff;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 -3rem 0;
 }
 
 .hero-title-part {
   display: inline-block;
+  letter-spacing: -0.04em;
+  line-height: 1;
   color: #ffffff;
 }
 
 .hero-title-find {
-  font-family: sans-serif, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
 
 .hero-title-park {
   font-family: victor-serif, serif;
   font-weight: 400;
-  font-style: italic;
 }
 
 .hero-copy p {
   color: rgba(255, 255, 255, 0.85);
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: 1.25rem;
+  font-weight: 400;
   max-width: 680px;
   line-height: 1.7;
-  margin: 0 0 2.5rem 0;
-}
-
-.hero-copy p {
-  margin: 0;
-  max-width: 680px;
+  margin: 0 0 2rem 0;
 }
 
 .hero-actions {
@@ -321,13 +321,6 @@ img {
   margin: 2rem auto 0;
 }
 
-.hero-copy p {
-  max-width: 620px;
-  font-size: 1.08rem;
-  color: var(--muted);
-  line-height: 1.8;
-}
-
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -335,25 +328,7 @@ img {
   margin: 2.2rem 0;
 }
 
-.btn {
-font-family:Arial, Helvetica, sans-serif;
-  display: inline-flex;
-  align-items: center;
-  margin-top: 0.45rem;
-  margin-bottom: 0.45rem;
-  margin-right: -0.25rem;
-  margin-left: -0.20rem;
-  justify-content: center;
-  padding: 0.45rem 1.5rem;
-  border-radius: 50px;
-  height: 43px;
-  font-weight: 500;
-  font-size: 14px;
-  background: #01030b;
-  color: #dfdfdf;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
-  transition: all 0.3s ease, background 0.3s ease, color 0.3s ease;
-}
+
 
 .btn-primary {
   font-family:Arial, Helvetica, sans-serif;
@@ -762,7 +737,6 @@ font-family:Arial, Helvetica, sans-serif;
 
   .nav-links.open {
     transform: translateY(0);
-    opacity: 1;
     pointer-events: auto;
   }
 
