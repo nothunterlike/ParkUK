@@ -129,7 +129,7 @@ img {
 }
 
 .btn-cta {
-  font-family:Arial, Helvetica, sans-serif;
+  font: sans-serif;
   display: inline-flex;
   align-items: center;
   margin-top: 0.5rem;
