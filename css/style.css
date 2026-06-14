@@ -91,7 +91,7 @@ img {
   margin-inline: auto;
   margin-top:  0.50rem;
   height: 50px;
-  width: 350px;
+  width: 375px;
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
@@ -114,6 +114,7 @@ img {
   border-radius: 999px;
   color: var(--text);
   font-weight: 600;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
   transition: background 0.3s ease, color 0.3s ease;
 }
 
@@ -123,12 +124,12 @@ img {
 }
 
 .btn {
-  font-family: helvetica, sans-serif;
+  font-family: arial, sans-serif;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 50vw;
-  width: 165px;
+  width: 175px;
   font-size: 15px;
   font-style: bold;
   margin-top: 0rem;
@@ -142,10 +143,10 @@ img {
 
 .btn-cta:hover {
   backdrop-filter: blur(1px);
-  background: #0b0d13;
-  box-shadow: rgba(255, 255, 255, 0.1) 1px 1px 1px 0px inset, rgba(255, 255, 255, 0.2) -1px -1px 1px 0px inset;
-  border-radius: 50vw;
-  color: #c3c2ff;
+    box-shadow: rgba(255, 255, 255, 0.1) 1px 1px 1px 0px inset, rgba(255, 255, 255, 0.2) -1px -1px 1px 0px inset;
+    border-radius: 50vw;
+  color: #0f1013;
+  background: #dfdfdf;
 }
 
 .btn-cta:active,
