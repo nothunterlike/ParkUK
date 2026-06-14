@@ -67,6 +67,15 @@ img {
 }
 
 
+@font-face {
+    font-family: "MonsterratThin";
+    src: url("./fonts/Montserrat-Thin.otf") format("otf");
+}
+
+body {
+    font-family: "MonsterratThin", sans-serif;
+}
+
 
 .container {
   width: min(100% - 2rem, var(--max-width));
@@ -181,7 +190,7 @@ img {
   padding: 0.45rem 1.5rem;
   background: #01030b;
   color: #e7e7e7;
-  transition: all 0.3s ease, background 0.3s ease, color 0.3s ease;
+  transition: all 0.4s ease, background 0.3s ease, color 0.3s ease;
 }
 
 .btn-cta:hover {
@@ -346,8 +355,8 @@ img {
 }
 
 .hero-title-find {
-  font-family: Helvetica, sans-serif;
-  font-weight: 300;
+  font-family: "MontserratThin", sans-serif;
+  font-weight: 500;
 }
 
 .hero-title-park {
@@ -399,7 +408,7 @@ img {
   background: #dfdfdf;
   color: #0f1013;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
-  transition: all 0.3s ease, background 0.3s ease, color 0.3s ease;
+  transition: all 0.4s ease, background 0.3s ease, color 0.3s ease;
 }
 
 .btn:not(.btn-cta):hover {
