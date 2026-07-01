@@ -148,27 +148,44 @@ img {
   width: 200px;
   font-size: 17.5px;
   font-weight: 500;
-  margin-top: 0rem;
+  margin-top: 0.05rem;
   margin-right: -0.2rem;
-  height: 43px;
+  height: 42.75px;
   padding: 0.45rem 1.5rem;
-  background: #01030b;
+
+  background: linear-gradient(
+    120deg,
+    rgb(5, 9, 20) 0%,
+    rgba(6, 13, 25, 0.9) 50%,
+    rgb(2, 7, 14) 100%
+  );
+
+  background-size: 200% 200%;
+  background-position: left center;
+
   color: #e7e7e7;
-  transition: all 0.4s ease, background 0.3s ease, color 0.3s ease;
+  text-shadow: 0 0 30px rgba(0, 89, 255, 0.6);
+
+  transition:
+    transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    background-position 0.4s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .btn-cta:hover {
-  backdrop-filter: blur(1px);
-    box-shadow: rgba(255, 255, 255, 0.05) 1px 1px 0.11px 0px inset, rgba(255, 255, 255, 0.1) -1px -1px 1px 0px inset;
-    border-radius: 50vw;
-  color: #0f1013;
-  background: #dfdfdf;
+  color: #dedede;
+  background-position: right center;
+
+  transform: translateY(-0.5px);
+
+  box-shadow:
+    0 8px 40px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-.btn-cta:active,
-.btn-cta:focus {
-  transform: translateY(0) !important;
-}
+
+
 .nav-logo img {
   margin-top: -10px;
   margin-left: 50px;
@@ -203,7 +220,7 @@ img {
   padding: 0.45rem 1.5rem;
   height: 42.75px;
   margin-left: -0.2rem;
-  margin-top: 0rem;
+  margin-top: 0.1rem;
   border-radius: 50vw;
 
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -226,7 +243,7 @@ img {
   transform: translateY(-1px);
 
   box-shadow:
-    0 8px 20px rgba(0, 0, 0, 0.25),
+    0 8px 20px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
